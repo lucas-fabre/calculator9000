@@ -1,0 +1,30 @@
+/* Nous voici dans le document .css qui va permettre de modifier les éléments sur la page HTML. */
+/* Pour rappel, décomposons une règle css: */
+
+/* "#root" est un sélecteur, il est précédé par un "#" car un sélecteur d'ID qui se trouve en paramètre des balises 
+exemple: <div id="root" /> */
+#root {
+  /* "max-width" est une propriété, "1280px" est sa valeur et le tout forme une "Déclaration".*/
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* ".Global" est aussi un sélecteur mais cette fois précédé par un ".", ceci signifie qu'il s'agit d'un sélecteur de classe.
+Il fait appelle à la <div className="Global"> créée dans le document App.jsx
+et modifira tous ses composants enfants (Main.jsx puis Object1 et Objects2*/
+.Global {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* A partir du moment ou les composants sont disposés dans le document "App.jsx", ils peuvent tous être modifiés en les appelants grâce à leurs
+sélecteurs exemple: "id='idexemple'" ou "className='Nameexemple'" */
